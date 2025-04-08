@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform Your Home</title>
+    <style>
+        :root {
+            --primary-color: #007BFF; /* Button background color */
+            --primary-color-dark: #0056b3; /* Darker blue on hover */
+            --text-color: #333; /* Dark text color */
+            --light-background: #f0f0f0; /* Light background color */
+            --gray-text: #666; /* Gray text color */
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            line-height: 1.6; /* Improve readability */
+        }
+
+        .hero-section {
+            background-color: var(--light-background); /* Light background color */
+            height: 100vh; /* Full viewport height */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .headline {
+            font-size: 2.5em; /* Large font size for the headline */
+            margin-bottom: 20px; /* Space below the headline */
+            color: var(--text-color); /* Dark text color */
+        }
+
+        .navigation {
+            display: flex;
+            flex-wrap: wrap; /* Allow buttons to wrap on smaller screens */
+            gap: 15px; /* Space between buttons */
+        }
+
+        .nav-button {
+            padding: 15px 25px; /* Padding for the buttons */
+            background-color: var(--primary-color); /* Button background color */
+            color: white; /* Button text color */
+            text-decoration: none; /* Remove underline from links */
+            border-radius: 5px; /* Rounded corners */
+            transition: background-color 0.3s; /* Smooth transition for hover effect */
+        }
+
+        .nav-button:hover {
+            background-color: var(--primary-color-dark); /* Darker blue on hover */
+        }
+
+        main {
+            padding: 50px 20px; /* Padding for sections */
+            text-align: center; /* Center text in sections */
+        }
+
+        h2 {
+            font-size: 2em; /* Font size for section headings */
+            margin-bottom: 20px; /* Space below section headings */
+        }
+
+        p {
+            font-size: 1.2em; /* Font size for paragraph text */
+            color: var(--gray-text); /* Gray text color */
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            .headline {
+                font-size: 2em; /* Smaller font size for smaller screens */
+            }
+
+            .nav-button {
+                padding: 10px 15px; /* Smaller padding for buttons */
+                font-size: 0.9em; /* Smaller font size for buttons */
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="hero-section">
+        <h1 class="headline">Transform Your Home, Transform Your Life</h1>
+        <nav class="navigation" aria-label="Main Navigation">
+            <a href="home-page.html" class="nav-button" aria-label="Go to Home Page">Home Page</a>
+            <a href="about-us.html" class="nav-button" aria-label="Learn About Us">About Us Page</a>
+            <a href="service-page.html" class="nav-button" aria-label="View Our Services">Service Page</a>
+            <a href="portfolio.html" class="nav-button" aria-label="See Our Portfolio">Portfolio Page</a>
+            <a href="testimonials.html" class="nav-button" aria-label="Read Testimonials">Testimonials Page</a>
+            <a href="contact-us.html" class="nav-button" aria-label="Contact Us">Contact Us Page</a>   
+        </nav>
+    </header>
+
+</body>
+</html>
